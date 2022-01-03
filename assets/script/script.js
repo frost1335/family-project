@@ -558,7 +558,7 @@ window.addEventListener("load", function (e) {
   window.addEventListener("scroll", () => {
     const elem = document.querySelector(".center-card-img");
     const position = elem.getBoundingClientRect();
-    console.log(position.top);
+    console.log(position  .top);
   });
   strategyAnimation();
 });
