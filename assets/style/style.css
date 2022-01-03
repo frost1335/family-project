@@ -23,7 +23,6 @@ header {
 
 header nav {
   max-width: 1920px;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -112,7 +111,14 @@ header nav .header-center .header-add-btn button {
   cursor: pointer;
 }
 
-header nav .header-center .header-add-btn button i {
+header nav .header-center .header-add-btn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  width: 254px;
+}
+header nav .header-center .header-add-btn button svg {
   margin-left: 20px;
 }
 
@@ -141,8 +147,7 @@ header nav .dropdown-item-ul ul li a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-header nav .header-right-ul .header-right-bars button {
+.header-right-bars button {
   position: fixed;
   top: 45px;
   right: 45px;
@@ -575,6 +580,7 @@ header .elephant-header img {
   font-size: 26px;
   line-height: 160%;
   margin-bottom: 10px;
+  width: 440px;
 }
 
 .results .results-content .content-right p span {
@@ -582,6 +588,13 @@ header .elephant-header img {
   font-weight: normal;
   font-size: 26px;
   line-height: 160%;
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(27, 85, 141, 1),
+    rgba(55, 155, 173, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .results .results-content .results-body {
@@ -1756,4 +1769,98 @@ input[type="number"] {
   border-radius: 12px;
   margin-left: 2.75px;
   margin-right: 2.75px;
+}
+@media (max-width: 1599px) {
+  header {
+    max-width: 1024px;
+    padding-left: 42px;
+  }
+  header nav {
+    max-width: 1024px;
+    padding-left: 0px;
+    justify-content: start;
+  }
+  header nav .header-right-ul {
+    display: none;
+  }
+  .logo {
+    margin-right: 47px;
+  }
+  header nav .header-left {
+    margin-right: 84px;
+    justify-content: start;
+    width: 243px;
+  }
+  header nav .header-center {
+    width: 413px;
+  }
+  header nav .header-center .header-number h4 {
+    font-size: 18px;
+  }
+  header nav .header-center .header-add-btn button {
+    font-size: 18px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 235px;
+  }
+  header nav .header-center .header-add-btn button svg {
+    margin-left: 20px;
+  }
+  header nav .header-left .dropdown a {
+    font-size: 18px;
+  }
+  header .header .header-title {
+    max-width: 960px;
+    padding-top: 274px;
+  }
+  header .header .header-title h3 {
+    font-size: 66px;
+  }
+  header .header .header-title h2 {
+    font-size: 66px;
+  }
+  .main-underline .text-line .line-block {
+    font-size: 36px;
+  }
+  .main-underline .main-content h2 {
+    font-size: 36px;
+  }
+  .main-underline .main-card p {
+    font-size: 26px;
+  }
+  .main-content {
+    max-width: 1024px;
+    padding-left: 42px;
+  }
+  /* ============================= results start */
+  .results-content {
+    max-width: 1024px;
+    padding-left: 42px;
+  }
+  .results .results-content .results-header h2 {
+    font-size: 65px;
+  }
+  .results .results-content .results-header h3 {
+    font-size: 65px;
+  }
+  .results .results-content .content-right p {
+    font-size: 23px;
+    width: 360px;
+  }
+  .results .results-content .results-body {
+    margin-top: 100px;
+  }
+  .results .results-content .results-body .result-slide h2 {
+    font-size: 36px;
+    margin-left: 20px;
+  }
+  .results .results-content .results-body .result-slide p {
+    font-size: 18px;
+    margin-left: 20px;
+    width: 360px;
+  }
+  /* ============================= results end */
 }
