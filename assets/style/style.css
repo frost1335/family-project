@@ -1681,10 +1681,11 @@ input[type="number"] {
   align-items: center;
   justify-content: center;
   display: none;
+  opacity: 0;
 }
 
 .nps-modal .modal-box {
-  width: 1530px;
+  max-width: 1530px;
   margin: auto;
   padding: 60px 110px 100px;
   display: flex;
@@ -1693,7 +1694,7 @@ input[type="number"] {
   align-items: center;
   background: #f4f8fa;
   border-radius: 12px;
-  position: fixed;
+  z-index: 36;
 }
 
 .nps-modal .modal-box .modal-top {
@@ -1770,6 +1771,67 @@ input[type="number"] {
   margin-left: 2.75px;
   margin-right: 2.75px;
 }
+
+/* ==================================================== section strategy started */
+.strategy {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  position: relative;
+  z-index: 20;
+  padding-top: 100px;
+}
+
+.strategy .strategy-title {
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.strategy .strategy-title h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 100px;
+  line-height: 120%;
+  color: #2d3845;
+  margin-left: 130px;
+}
+
+.strategy .strategy-title .title-bottom {
+  background: linear-gradient(270deg, #1b558d 0%, #379bad 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.strategy .strategy-card {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  position: relative;
+  margin-top: 100px;
+}
+
+.strategy .strategy-card .card-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.strategy .strategy-card .card-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.strategy .strategy-card .card-bottom {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
 @media (max-width: 1599px) {
   header {
     max-width: 1024px;

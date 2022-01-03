@@ -395,12 +395,12 @@ window.addEventListener("load", function (e) {
 
     tl.from(".dital-title", {
       opacity: 0,
-      duration: 2,
+      duration: 1,
     }).to(
       ".dig-cen-title",
       {
         marginLeft: 390,
-        duration: 2,
+        duration: 1,
       },
       "-=0.9"
     );
@@ -437,6 +437,64 @@ window.addEventListener("load", function (e) {
         markers: true,
       },
     });
+
+    $(".footer-button").on("click", function (e) {
+      gsap.to(".nps-modal", {
+        display: "flex",
+        opacity: 1,
+        duration: 0.5,
+      });
+      document.addEventListener("click", function (e) {
+        if (
+          e.target.className === "nps-modal" ||
+          e.target.className === "modal-close"
+        ) {
+          gsap.to(".nps-modal", {
+            opacity: 0,
+            display: "none",
+            duration: 0.5,
+          });
+        }
+      });
+    });
   };
   digitalAnimation();
+
+  // ============================ strategy animation start
+
+  const strategyAnimation = () => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".strategy-title",
+        scrub: 2,
+        start: "0% 90%",
+        markers: true,
+        end: "+=400",
+      },
+    });
+    tl.from([".title-top", ".title-center", ".title-bottom"], {
+      opacity: 0,
+    }).from(
+      ".title-center",
+      {
+        marginLeft: 0,
+      },
+      "-=0.4"
+    );
+
+    gsap.to([".card-left", ".card-right", ".card-bottom"], {
+      top: 0,
+      left: "50%",
+      x: "-50%",
+      scrollTrigger: {
+        trigger: ".strategy-card",
+        start: "0% 100%",
+        scrub: 1,
+        markers: true,
+        end: () =>
+          "+=" + document.querySelector(".strategy-card").offsetHeight / 2,
+      },
+    });
+  };
+  strategyAnimation();
 });
