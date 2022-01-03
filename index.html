@@ -1,787 +1,681 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./assets/style/style.css" />
-    <title>Document</title>
-  </head>
 
-  <body>
-    <!-- ================================= header start -->
-    <header>
-      <nav class="headerNav">
-        <div class="header-left">
-          <div class="logo">
-            <a href="#">
-              <img src="./assets/images/logo.png" alt="" />
-            </a>
-          </div>
-          <div class="dropdown">
-            <a href="#" class="dropdown-clicked"
-              >Киров <i class="fas fa-chevron-down"></i
-            ></a>
-            <div class="dropdown-item">
-              <ul>
-                <li>
-                  <a href="#" class="dropdown-item-a-first"
-                    >Киров <i class="fas fa-chevron-up"></i
-                  ></a>
-                </li>
-                <li><a href="#" class="dropdown-item-a">Москва</a></li>
-                <li><a href="#" class="dropdown-item-a">Санкт-Петербург</a></li>
-                <li><a href="#" class="dropdown-item-a">Екатеринбург</a></li>
-              </ul>
-            </div>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/style/style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- ================================= header start -->
+  <header>
+    <nav class="headerNav">
+      <div class="header-left">
+        <div class="logo">
+          <a href="#">
+            <img src="./assets/images/logo.png" alt="" />
+          </a>
         </div>
-        <div class="header-center">
-          <div class="header-number">
-            <h4>8 800 351 45 66</h4>
-          </div>
-          <div class="header-add-btn">
-            <button>
-              Привлечь клиентов
-              <svg
-                width="44"
-                height="44"
-                viewBox="0 0 44 44"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  y="0.000976562"
-                  width="44"
-                  height="44"
-                  rx="12"
-                  fill="#F4F8FA"
-                />
-                <path
-                  d="M20 23.001C20.5523 23.001 21 23.4487 21 24.001V29.001C21 29.5533 21.4477 30.001 22 30.001V30.001C22.5523 30.001 23 29.5533 23 29.001V24.001C23 23.4487 23.4477 23.001 24 23.001H29C29.5523 23.001 30 22.5533 30 22.001V22.001C30 21.4487 29.5523 21.001 29 21.001H24C23.4477 21.001 23 20.5533 23 20.001V15.001C23 14.4487 22.5523 14.001 22 14.001V14.001C21.4477 14.001 21 14.4487 21 15.001V20.001C21 20.5533 20.5523 21.001 20 21.001H15C14.4477 21.001 14 21.4487 14 22.001V22.001C14 22.5533 14.4477 23.001 15 23.001H20Z"
-                  fill="#1B558D"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div class="header-right-ul">
-          <ul>
-            <li class="hover-ul hover-ul-a">
-              <a href="#">Услуги</a>
-              <div class="dropdown-item-ul">
-                <ul>
-                  <li>
-                    <a href="#" class="dropdown-item-a-first hover-ul-a"
-                      >Услуги</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="dropdown-item-a hover-ul-a"
-                      >Контекстная реклама</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="dropdown-item-a hover-ul-a"
-                      >Аудит контекстной рекламы</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="dropdown-item-a hover-ul-a">SEO</a>
-                  </li>
-                  <li>
-                    <a href="#" class="dropdown-item-a hover-ul-a">Аудит SEO</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li><a href="#">Кейсы</a></li>
-            <li><a href="#">Отзывы</a></li>
-            <li><a href="#">Меню</a></li>
-          </ul>
-        </div>
-        <div class="header-right-bars">
-          <button><img src="./assets/images/bars.png" alt="" /></button>
-        </div>
-      </nav>
-      <div class="header-top">
-        <div class="header-top-left">
-          <div class="logo">
-            <img src="./assets/images/label.png" alt="" />
-          </div>
-          <div class="exit">
-            <i class="fas fa-times"></i>
-          </div>
-        </div>
-        <div class="header-top-center">
-          <ul class="header-top-center-top-ul">
-            <li><a href="#">Кейсы</a></li>
-            <li><a href="#">Отзывы</a></li>
-            <li><a href="#">Контакты</a></li>
-            <li><a href="#">Услуги</a></li>
-          </ul>
-          <ul class="header-top-center-bottom-ul">
-            <li><a href="#">Контекстная реклама</a></li>
-            <li><a href="#">Аудит контекстной рекламы</a></li>
-            <li><a href="#">SEO</a></li>
-            <li><a href="#">Аудит SEO</a></li>
-          </ul>
-        </div>
-        <div class="header-top-bottom">
-          <div class="header-add-btn">
-            <button>Привлечь клиентов</button>
-            <span>
-              <i class="fas fa-plus"></i>
-            </span>
-          </div>
-          <div class="connections">
-            <p>Мы в мессенджерах</p>
+        <div class="dropdown">
+          <a href="#" class="dropdown-clicked">Киров <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-item">
             <ul>
               <li>
-                <a href="#"><i class="fas fa-phone-volume"></i></a>
+                <a href="#" class="dropdown-item-a-first">Киров <i class="fas fa-chevron-up"></i></a>
               </li>
-              <li>
-                <a href="#"><i class="fab fa-telegram-plane"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fas fa-phone-alt"></i></a>
-              </li>
+              <li><a href="#" class="dropdown-item-a">Москва</a></li>
+              <li><a href="#" class="dropdown-item-a">Санкт-Петербург</a></li>
+              <li><a href="#" class="dropdown-item-a">Екатеринбург</a></li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="header">
-        <div class="header-title">
-          <h3 class="headerTitle">Приведём клиентов</h3>
-          <h2 class="headerTitle">от 49 ₽ за лид</h2>
-          <h3 class="headerTitle">в течение 1 дня</h3>
+      <div class="header-center">
+        <div class="header-number">
+          <h4>8 800 351 45 66</h4>
         </div>
-        <div class="header-bg"></div>
-        <div class="elephant-header">
-          <img
-            src="./assets/images/elephant_body.png"
-            alt="elephant-body"
-            class="elephant-body elephant-img"
-            style="margin-top: -20px"
-          />
-          <img
-            src="./assets/images/elephant_ears.png"
-            alt="elephant-ears"
-            class="elephant-ears elephant-img"
-            style="margin-top: 20px"
-          />
-          <img
-            src="./assets/images/elephant_face.png"
-            alt="elephant-face"
-            class="elephant-face elephant-img"
-            style="margin-top: -20px"
-          />
+        <div class="header-add-btn">
+          <button>
+            Привлечь клиентов
+            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect y="0.000976562" width="44" height="44" rx="12" fill="#F4F8FA" />
+              <path
+                d="M20 23.001C20.5523 23.001 21 23.4487 21 24.001V29.001C21 29.5533 21.4477 30.001 22 30.001V30.001C22.5523 30.001 23 29.5533 23 29.001V24.001C23 23.4487 23.4477 23.001 24 23.001H29C29.5523 23.001 30 22.5533 30 22.001V22.001C30 21.4487 29.5523 21.001 29 21.001H24C23.4477 21.001 23 20.5533 23 20.001V15.001C23 14.4487 22.5523 14.001 22 14.001V14.001C21.4477 14.001 21 14.4487 21 15.001V20.001C21 20.5533 20.5523 21.001 20 21.001H15C14.4477 21.001 14 21.4487 14 22.001V22.001C14 22.5533 14.4477 23.001 15 23.001H20Z"
+                fill="#1B558D" />
+            </svg>
+          </button>
         </div>
       </div>
-    </header>
-
-    <!-- ================================= fixed icons -->
-    <div class="connections-fixed">
-      <ul class="headerNav">
-        <li>
-          <a href="#"><i class="fas fa-phone-volume"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fab fa-telegram-plane"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fab fa-facebook"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fab fa-whatsapp"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fas fa-phone-alt"></i></a>
-        </li>
-      </ul>
+      <div class="header-right-ul">
+        <ul>
+          <li class="hover-ul hover-ul-a">
+            <a href="#">Услуги</a>
+            <div class="dropdown-item-ul">
+              <ul>
+                <li>
+                  <a href="#" class="dropdown-item-a-first hover-ul-a">Услуги</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item-a hover-ul-a">Контекстная реклама</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item-a hover-ul-a">Аудит контекстной рекламы</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item-a hover-ul-a">SEO</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item-a hover-ul-a">Аудит SEO</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">Кейсы</a></li>
+          <li><a href="#">Отзывы</a></li>
+          <li><a href="#">Меню</a></li>
+        </ul>
+      </div>
+      <div class="header-right-bars">
+        <button><img src="./assets/images/bars.png" alt="" /></button>
+      </div>
+    </nav>
+    <div class="header-top">
+      <div class="header-top-left">
+        <div class="logo">
+          <img src="./assets/images/label.png" alt="" />
+        </div>
+        <div class="exit">
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+      <div class="header-top-center">
+        <ul class="header-top-center-top-ul">
+          <li><a href="#">Кейсы</a></li>
+          <li><a href="#">Отзывы</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Услуги</a></li>
+        </ul>
+        <ul class="header-top-center-bottom-ul">
+          <li><a href="#">Контекстная реклама</a></li>
+          <li><a href="#">Аудит контекстной рекламы</a></li>
+          <li><a href="#">SEO</a></li>
+          <li><a href="#">Аудит SEO</a></li>
+        </ul>
+      </div>
+      <div class="header-top-bottom">
+        <div class="header-add-btn">
+          <button>Привлечь клиентов</button>
+          <span>
+            <i class="fas fa-plus"></i>
+          </span>
+        </div>
+        <div class="connections">
+          <p>Мы в мессенджерах</p>
+          <ul>
+            <li>
+              <a href="#"><i class="fas fa-phone-volume"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-telegram-plane"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-phone-alt"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
+    <div class="header">
+      <div class="header-title">
+        <h3 class="headerTitle">Приведём клиентов</h3>
+        <h2 class="headerTitle">от 49 ₽ за лид</h2>
+        <h3 class="headerTitle">в течение 1 дня</h3>
+      </div>
+      <div class="header-bg"></div>
+      <div class="elephant-header">
+        <img src="./assets/images/elephant_body.png" alt="elephant-body" class="elephant-body elephant-img"
+          style="margin-top: -20px" />
+        <img src="./assets/images/elephant_ears.png" alt="elephant-ears" class="elephant-ears elephant-img"
+          style="margin-top: 20px" />
+        <img src="./assets/images/elephant_face.png" alt="elephant-face" class="elephant-face elephant-img"
+          style="margin-top: -20px" />
+      </div>
+    </div>
+  </header>
 
-    <!-- ================================= main section -->
-    <div class="main-underline">
-      <div class="main-content">
-        <h2 class="mainTitle">Вам не нужны</h2>
-        <div class="main-text">
-          <div class="text-line">
-            <div class="line-block">
-              <p>настройки,</p>
-              <span></span>
-            </div>
-            &nbsp;&nbsp;&nbsp;
-            <div class="line-block">
-              <p>дизайны,</p>
-              <span></span>
-            </div>
+  <!-- ================================= fixed icons -->
+  <div class="connections-fixed">
+    <ul class="headerNav">
+      <li>
+        <a href="#"><i class="fas fa-phone-volume"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fab fa-telegram-plane"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-phone-alt"></i></a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- ================================= main section -->
+  <div class="main-underline">
+    <div class="main-content">
+      <h2 class="mainTitle">Вам не нужны</h2>
+      <div class="main-text">
+        <div class="text-line">
+          <div class="line-block">
+            <p>настройки,</p>
+            <span></span>
           </div>
-          <div class="text-line">
-            <div class="line-block">
-              <p>верстки,</p>
-              <span></span>
-            </div>
-            &nbsp;&nbsp;&nbsp;
-            <div class="line-block">
-              <p>сайты,</p>
-              <span></span>
-            </div>
-            &nbsp;&nbsp;&nbsp;
-            <div class="line-block">
-              <p>соц. сети,</p>
-              <span></span>
-            </div>
-          </div>
-          <div class="text-line">
-            <div class="line-block">
-              <p>показы,</p>
-              <span></span>
-            </div>
-            &nbsp;&nbsp;&nbsp;
-            <div class="line-block">
-              <p>клики</p>
-              <span></span>
-            </div>
-            &nbsp;&nbsp;&nbsp;
-            <div class="line-block">
-              <p>и прочее</p>
-            </div>
+          &nbsp;&nbsp;&nbsp;
+          <div class="line-block">
+            <p>дизайны,</p>
+            <span></span>
           </div>
         </div>
+        <div class="text-line">
+          <div class="line-block">
+            <p>верстки,</p>
+            <span></span>
+          </div>
+          &nbsp;&nbsp;&nbsp;
+          <div class="line-block">
+            <p>сайты,</p>
+            <span></span>
+          </div>
+          &nbsp;&nbsp;&nbsp;
+          <div class="line-block">
+            <p>соц. сети,</p>
+            <span></span>
+          </div>
+        </div>
+        <div class="text-line">
+          <div class="line-block">
+            <p>показы,</p>
+            <span></span>
+          </div>
+          &nbsp;&nbsp;&nbsp;
+          <div class="line-block">
+            <p>клики</p>
+            <span></span>
+          </div>
+          &nbsp;&nbsp;&nbsp;
+          <div class="line-block">
+            <p>и прочее</p>
+          </div>
+        </div>
+      </div>
 
-        <div class="main-card">
+      <div class="main-card">
+        <p>
+          Вам нужны конкретные <span>заявки и звонки</span> клиентов – мы
+          дадим их!
+        </p>
+        <a href="#">
+          Рассчитать результат
+          <div class="arrowIcon">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4.99805 1.00195C4.99805 0.449707 5.4458 0.00195312 5.99805 0.00195312H12.998C13.5503 0.00195312 13.998 0.449707 13.998 1.00195V8.00195C13.998 8.5542 13.5503 9.00195 12.998 9.00195C12.4458 9.00195 11.998 8.5542 11.998 8.00195V3.41602L1.70911 13.7051C1.3186 14.0956 0.685425 14.0956 0.294922 13.7051C-0.0957031 13.3145 -0.0957031 12.6814 0.294922 12.2908L10.5837 2.00195H5.99805C5.4458 2.00195 4.99805 1.5542 4.99805 1.00195Z"
+                fill="#1B558D" />
+            </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================================= results start -->
+  <section class="results">
+    <div class="results-content">
+      <div class="results-header">
+        <div class="content-left">
+          <h2>Результаты</h2>
+          <h3>клиентов</h3>
+        </div>
+        <div class="content-right">
           <p>
-            Вам нужны конкретные <span>заявки и звонки</span> клиентов – мы
-            дадим их!
-          </p>
-          <a href="#">
-            Рассчитать результат
-            <div class="arrowIcon">
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+            которые получили свою
+            <span>прибыль
+              <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
-                  d="M4.99805 1.00195C4.99805 0.449707 5.4458 0.00195312 5.99805 0.00195312H12.998C13.5503 0.00195312 13.998 0.449707 13.998 1.00195V8.00195C13.998 8.5542 13.5503 9.00195 12.998 9.00195C12.4458 9.00195 11.998 8.5542 11.998 8.00195V3.41602L1.70911 13.7051C1.3186 14.0956 0.685425 14.0956 0.294922 13.7051C-0.0957031 13.3145 -0.0957031 12.6814 0.294922 12.2908L10.5837 2.00195H5.99805C5.4458 2.00195 4.99805 1.5542 4.99805 1.00195Z"
-                  fill="#1B558D"
-                />
+                  d="M4.99609 1.50195C4.99609 0.949707 5.44385 0.501953 5.99609 0.501953H12.9961C13.5483 0.501953 13.9961 0.949707 13.9961 1.50195V8.50195C13.9961 9.0542 13.5483 9.50195 12.9961 9.50195C12.4438 9.50195 11.9961 9.0542 11.9961 8.50195V3.91602L1.70715 14.2051C1.31665 14.5956 0.683472 14.5956 0.292969 14.2051C-0.0976562 13.8145 -0.0976562 13.1814 0.292969 12.7908L10.5818 2.50195H5.99609C5.44385 2.50195 4.99609 2.0542 4.99609 1.50195Z"
+                  fill="#379BAD" />
               </svg>
-            </div>
-          </a>
+            </span>
+
+            от нашей работы
+          </p>
         </div>
       </div>
-    </div>
-
-    <!-- ================================= results start -->
-    <section class="results">
-      <div class="results-content">
-        <div class="results-header">
+      <div class="results-body">
+        <div class="result-slide">
           <div class="content-left">
-            <h2>Результаты</h2>
-            <h3>клиентов</h3>
-          </div>
-          <div class="content-right">
-            <p>
-              которые получили свою
-              <span
-                >прибыль
-                <svg
-                  width="14"
-                  height="15"
-                  viewBox="0 0 14 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M4.99609 1.50195C4.99609 0.949707 5.44385 0.501953 5.99609 0.501953H12.9961C13.5483 0.501953 13.9961 0.949707 13.9961 1.50195V8.50195C13.9961 9.0542 13.5483 9.50195 12.9961 9.50195C12.4438 9.50195 11.9961 9.0542 11.9961 8.50195V3.91602L1.70715 14.2051C1.31665 14.5956 0.683472 14.5956 0.292969 14.2051C-0.0976562 13.8145 -0.0976562 13.1814 0.292969 12.7908L10.5818 2.50195H5.99609C5.44385 2.50195 4.99609 2.0542 4.99609 1.50195Z"
-                    fill="#379BAD"
-                  />
-                </svg>
-              </span>
-
-              от нашей работы
-            </p>
-          </div>
-        </div>
-        <div class="results-body">
-          <div class="result-slide">
-            <div class="content-left">
-              <div class="left-content-container">
-                <h2>АвтоКомфорт</h2>
-                <p>
-                  Автосервис, авто оборудование, климатическое оборудование,
-                  предпусковые подогреватели в Кирове.
-                </p>
-                <div class="left-cards">
-                  <div class="card-box">
-                    <div class="card-month">
-                      <p>За 6 месяцев</p>
+            <div class="left-content-container">
+              <h2>АвтоКомфорт</h2>
+              <p class="result-slide-p">
+                Автосервис, авто оборудование, климатическое оборудование,
+                предпусковые подогреватели в Кирове.
+              </p>
+              <div class="left-cards">
+                <div class="card-box">
+                  <div class="card-month">
+                    <p class="result-slide-month">За 6 месяцев</p>
+                    <div class="">
                       <span>заявки</span>
                       <h3>773</h3>
                       <span>по</span>
                       <h3>700 ₽</h3>
                     </div>
-                    <span class="otherCard">Регион:</span>
-                    <h4 class="otherCard">Киров, Москва</h4>
-                    <button class="otherCard">
-                      Хочу так же
-                      <span>
-                        <svg
-                          width="14"
-                          height="15"
-                          viewBox="0 0 14 15"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M4.99805 1.50195C4.99805 0.949707 5.4458 0.501953 5.99805 0.501953H12.998C13.5503 0.501953 13.998 0.949707 13.998 1.50195V8.50195C13.998 9.0542 13.5503 9.50195 12.998 9.50195C12.4458 9.50195 11.998 9.0542 11.998 8.50195V3.91602L1.70911 14.2051C1.3186 14.5956 0.685425 14.5956 0.294922 14.2051C-0.0957031 13.8145 -0.0957031 13.1814 0.294922 12.7908L10.5837 2.50195H5.99805C5.4458 2.50195 4.99805 2.0542 4.99805 1.50195Z"
-                            fill="#1B558D"
-                          />
-                        </svg>
-                      </span>
-                    </button>
                   </div>
-                  <div class="card-box">
-                    <div class="card-month">
-                      <p>Заявок в месяц</p>
+                  <span class="otherCard">Регион:</span>
+                  <h4 class="otherCardRegion">Киров, Москва</h4>
+
+                </div>
+                <div class="card-box">
+                  <div class="card-month">
+                    <p class="result-slide-month">Заявок в месяц</p>
+                    <div class="">
                       <span>было</span>
-                      <h3>30</h3>
-                      <span>стало</span>
-                      <h3>90</h3>
+                      <h3 class="active__color">30</h3>
+                      <span class="active__color_2">стало</span>
+                      <h3 class="active__color_2">90</h3>
                     </div>
-                    <span class="otherCard"> Количество заявок </span>
-                    <h4 class="otherCard">Рост в 3 раза</h4>
                   </div>
+                  <span class="otherCard"> Количество заявок </span>
+                  <h4 class="otherCardRegion">Рост в 3 раза</h4>
                 </div>
-              </div>
-            </div>
-            <div class="content-right">
-              <div class="right-img">
-                <div class="img-box">
-                  <img src="./assets/images/case_auto.jpg" alt="" />
-                </div>
-                <div class="img-box">
-                  <img src="./assets/images/case_wintal.jpg" alt="" />
-                </div>
-                <div class="img-box">
-                  <img
-                    src="./assets/images/case_coffee.jpg"
-                    class="last-case-img"
-                    alt=""
-                  />
-                </div>
+                <button class="otherCardWant">
+                  Хочу так же
+                  <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="0.5" width="44" height="44" rx="12" fill="white" />
+                    <path
+                      d="M19.998 16.502C19.998 15.9497 20.4458 15.502 20.998 15.502H27.998C28.5503 15.502 28.998 15.9497 28.998 16.502V23.502C28.998 24.0542 28.5503 24.502 27.998 24.502C27.4458 24.502 26.998 24.0542 26.998 23.502V18.916L16.7091 29.2051C16.3186 29.5956 15.6854 29.5956 15.2949 29.2051C14.9043 28.8145 14.9043 28.1814 15.2949 27.7908L25.5837 17.502H20.998C20.4458 17.502 19.998 17.0542 19.998 16.502Z"
+                      fill="#1B558D" />
+                  </svg>
+
+                </button>
               </div>
             </div>
           </div>
-          <div class="result-slide">
-            <div class="content-left">
-              <div class="left-content-container">
-                <h2>Wintal</h2>
-                <p>Производство окон полного цикла</p>
-                <div class="left-cards">
-                  <div class="card-box">
-                    <div class="card-month">
-                      <p>За 6 месяцев</p>
+          <div class="content-right">
+            <div class="right-img">
+              <div class="img-box">
+                <img src="./assets/images/case_auto.jpg" alt="" />
+              </div>
+              <div class="img-box">
+                <img src="./assets/images/case_wintal.jpg" alt="" />
+              </div>
+              <div class="img-box">
+                <img src="./assets/images/case_coffee.jpg" class="last-case-img" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="result-slide">
+          <div class="content-left">
+            <div class="left-content-container">
+              <h2>Wintal</h2>
+              <p class="result-slide-p">Производство окон полного цикла</p>
+              <div class="left-cards">
+                <div class="card-box">
+                  <div class="card-month">
+                    <p class="result-slide-month">За 6 месяцев</p>
+                    <div class="">
                       <span>заявки</span>
                       <h3>1 268</h3>
                       <span>по</span>
                       <h3>700 ₽</h3>
                     </div>
-                    <span class="otherCard">Регион:</span>
-                    <h4 class="otherCard">Киров, Москва</h4>
-                    <button class="otherCard">
-                      Хочу так же
-                      <span>
-                        <svg
-                          width="14"
-                          height="15"
-                          viewBox="0 0 14 15"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M4.99805 1.50195C4.99805 0.949707 5.4458 0.501953 5.99805 0.501953H12.998C13.5503 0.501953 13.998 0.949707 13.998 1.50195V8.50195C13.998 9.0542 13.5503 9.50195 12.998 9.50195C12.4458 9.50195 11.998 9.0542 11.998 8.50195V3.91602L1.70911 14.2051C1.3186 14.5956 0.685425 14.5956 0.294922 14.2051C-0.0957031 13.8145 -0.0957031 13.1814 0.294922 12.7908L10.5837 2.50195H5.99805C5.4458 2.50195 4.99805 2.0542 4.99805 1.50195Z"
-                            fill="#1B558D"
-                          />
-                        </svg>
-                      </span>
-                    </button>
                   </div>
-                  <div class="card-box">
-                    <div class="card-month">
-                      <p>За 6 месяцев</p>
-                      <span>заявки</span>
-                      <h3>123</h3>
-                      <span>стало</span>
-                      <h3>615</h3>
-                    </div>
-                    <span class="otherCard"> Количество заявок </span>
-                    <h4 class="otherCard">Рост в 5 раза</h4>
-                  </div>
+                  <span class="otherCard">Регион:</span>
+                  <h4 class="otherCardRegion">Киров, Москва</h4>
+
                 </div>
+                <div class="card-box">
+                  <div class="card-month">
+                    <p class="result-slide-month">За 6 месяцев</p>
+                    <div class="">
+                      <span>заявки</span>
+                      <h3 class="active__color">123</h3>
+                      <span class="active__color_2">стало</span>
+                      <h3 class="active__color_2">615</h3>
+                    </div>
+                  </div>
+                  <span class="otherCard"> Количество заявок </span>
+                  <h4 class="otherCardRegion">Рост в 5 раза</h4>
+                </div>
+                <button class="otherCardWant">
+                  Хочу так же
+                  <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="0.5" width="44" height="44" rx="12" fill="white" />
+                    <path
+                      d="M19.998 16.502C19.998 15.9497 20.4458 15.502 20.998 15.502H27.998C28.5503 15.502 28.998 15.9497 28.998 16.502V23.502C28.998 24.0542 28.5503 24.502 27.998 24.502C27.4458 24.502 26.998 24.0542 26.998 23.502V18.916L16.7091 29.2051C16.3186 29.5956 15.6854 29.5956 15.2949 29.2051C14.9043 28.8145 14.9043 28.1814 15.2949 27.7908L25.5837 17.502H20.998C20.4458 17.502 19.998 17.0542 19.998 16.502Z"
+                      fill="#1B558D" />
+                  </svg>
+
+                </button>
               </div>
             </div>
-            <div class="content-right"></div>
           </div>
-          <div class="result-slide">
-            <div class="content-left">
-              <div class="left-content-container">
-                <h2>Fresh Coffee</h2>
-                <p>Обслуживание кофемашин и кофеварок</p>
-                <div class="left-cards">
-                  <div class="card-box">
-                    <div class="card-month">
-                      <p>За 6 месяцев</p>
+          <div class="content-right"></div>
+        </div>
+        <div class="result-slide">
+          <div class="content-left">
+            <div class="left-content-container">
+              <h2>Fresh Coffee</h2>
+              <p class="result-slide-p">Обслуживание кофемашин и кофеварок</p>
+              <div class="left-cards">
+                <div class="card-box">
+                  <div class="card-month">
+                    <p class="result-slide-month">За 6 месяцев</p>
+                    <div class="">
                       <span>заявки</span>
                       <h3>4 136</h3>
                       <span>по</span>
                       <h3>450 ₽</h3>
                     </div>
-                    <span class="otherCard">Регион:</span>
-                    <h4 class="otherCard">Киров, Москва</h4>
-                    <button class="otherCard">
-                      Хочу так же
-                      <span>
-                        <svg
-                          width="14"
-                          height="15"
-                          viewBox="0 0 14 15"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M4.99805 1.50195C4.99805 0.949707 5.4458 0.501953 5.99805 0.501953H12.998C13.5503 0.501953 13.998 0.949707 13.998 1.50195V8.50195C13.998 9.0542 13.5503 9.50195 12.998 9.50195C12.4458 9.50195 11.998 9.0542 11.998 8.50195V3.91602L1.70911 14.2051C1.3186 14.5956 0.685425 14.5956 0.294922 14.2051C-0.0957031 13.8145 -0.0957031 13.1814 0.294922 12.7908L10.5837 2.50195H5.99805C5.4458 2.50195 4.99805 2.0542 4.99805 1.50195Z"
-                            fill="#1B558D"
-                          />
-                        </svg>
-                      </span>
-                    </button>
                   </div>
-                  <div class="card-box">
-                    <div class="card-month">
-                      <p>Заявок в месяц</p>
+                  <span class="otherCard">Регион:</span>
+                  <h4 class="otherCardRegion">Киров, Москва</h4>
+
+                </div>
+                <div class="card-box">
+                  <div class="card-month">
+                    <p class="result-slide-month">Заявок в месяц</p>
+                    <div class="">
                       <span>было</span>
-                      <h3>10</h3>
-                      <span>стало</span>
-                      <h3>120</h3>
+                      <h3 class="active__color">10</h3>
+                      <span class="active__color_2">стало</span>
+                      <h3 class="active__color_2">120</h3>
                     </div>
-                    <span class="otherCard"> Количество заявок </span>
-                    <h4 class="otherCard">Рост в 12 раза</h4>
                   </div>
+                  <span class="otherCard"> Количество заявок </span>
+                  <h4 class="otherCardRegion">Рост в 12 раза</h4>
                 </div>
-              </div>
-            </div>
-            <div class="content-right"></div>
-          </div>
-        </div>
-      </div>
-      <div class="allKeys">
-        <button>
-          <span class="button-text"> Посмотреть все кейсы </span>
-          <span
-            ><svg
-              width="20"
-              height="12"
-              viewBox="0 0 20 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M13.333 0.295472C13.7241 -0.0986646 14.3575 -0.0983164 14.7484 0.295472L19.6745 5.259C19.8737 5.44402 19.9987 5.70894 19.9987 6.00068C19.9987 6.29926 19.8678 6.56974 19.6603 6.75523L14.7484 11.7045C14.3572 12.0987 13.7238 12.0983 13.333 11.7045C12.9422 11.3107 12.9418 10.6725 13.333 10.2784L16.5776 7.00911L1 7.00911C0.447717 7.00911 0 6.55297 0 6.00068C0 5.4484 0.447715 4.99225 1 4.99225L16.579 4.99225L13.333 1.7216C13.1505 1.53777 13.0534 1.30066 13.0413 1.06007C13.0272 0.785356 13.1243 0.50577 13.333 0.295472Z"
-                fill="#1B558D"
-              />
-            </svg>
-          </span>
-        </button>
-      </div>
-    </section>
-
-    <!-- ================================= feedback start -->
-    <section class="feedback">
-      <div class="feedback-content">
-        <div class="content-left">
-          <h2>Нужны заявки?</h2>
-          <p>
-            Запоните форму, свяжемся с вами для более детального изучения
-            проекта и подготовки коммерческого предложения
-          </p>
-          <form action="">
-            <div class="form-left">
-              <input type="text" placeholder="Ваше имя" name="name" id="name" />
-              <input
-                type="number"
-                placeholder="Ваш телефон"
-                name="phone"
-                id="phone"
-              />
-            </div>
-            <div class="form-right">
-              <p>Удобное время для звонка (по МСК)</p>
-              <div class="form-radios">
-                <input type="radio" id="10-13" name="time" value="10-13" />
-                <button type="button" for="html">10:00 - 13:00</button>
-
-                <input type="radio" id="13-16" name="time" value="13-16" />
-                <button type="button" for="13-16">13:00 - 16:00</button>
-
-                <input type="radio" id="16-19" name="time" value="16-19" />
-                <button type="button" for="16-19">16:00 - 19:00</button>
-              </div>
-              <span
-                >Работаем по будням с 9:00 до 18:00. Заявки, отправленные в
-                выходные, обрабатываем в первый рабочий день до 11:00</span
-              >
-            </div>
-            <div class="form-footer">
-              <button type="submit">
-                <span class="button-text">Отправить</span>
-                <span
-                  ><svg
-                    width="14"
-                    height="14"
-                    viewBox="0 0 14 14"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
+                <button class="otherCardWant">
+                  Хочу так же
+                  <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="0.5" width="44" height="44" rx="12" fill="white" />
                     <path
-                      d="M4.99609 1.00195C4.99609 0.449707 5.44385 0.00195312 5.99609 0.00195312H12.9961C13.5483 0.00195312 13.9961 0.449707 13.9961 1.00195V8.00195C13.9961 8.5542 13.5483 9.00195 12.9961 9.00195C12.4438 9.00195 11.9961 8.5542 11.9961 8.00195V3.41602L1.70715 13.7051C1.31665 14.0956 0.683472 14.0956 0.292969 13.7051C-0.0976562 13.3145 -0.0976562 12.6814 0.292969 12.2908L10.5818 2.00195H5.99609C5.44385 2.00195 4.99609 1.5542 4.99609 1.00195Z"
-                      fill="white"
-                    />
+                      d="M19.998 16.502C19.998 15.9497 20.4458 15.502 20.998 15.502H27.998C28.5503 15.502 28.998 15.9497 28.998 16.502V23.502C28.998 24.0542 28.5503 24.502 27.998 24.502C27.4458 24.502 26.998 24.0542 26.998 23.502V18.916L16.7091 29.2051C16.3186 29.5956 15.6854 29.5956 15.2949 29.2051C14.9043 28.8145 14.9043 28.1814 15.2949 27.7908L25.5837 17.502H20.998C20.4458 17.502 19.998 17.0542 19.998 16.502Z"
+                      fill="#1B558D" />
                   </svg>
-                </span>
-              </button>
-              <p>
-                Нажимая кнопку, вы соглашаетесь с
-                <span>политикой</span> обработки персональных данных
-              </p>
-            </div>
-          </form>
-        </div>
-        <div class="content-right">
-          <div class="elephant-img">
-            <img
-              src="./assets/images/elephant_body_dark.png"
-              alt="elephant-body"
-              class="elephant-body elephant-img-bo"
-            />
-            <img
-              src="./assets/images/elephant_ears_dark.png"
-              alt="elephant-ears"
-              class="elephant-ears elephant-img-bo"
-            />
-            <img
-              src="./assets/images/elephant_face_dark.png"
-              alt="elephant-face"
-              class="elephant-face elephant-img-bo"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- ================================= section result start -->
-    <section class="section_result_1">
-      <div class="container">
-        <div class="row">
-          <div class="result-top">
-            <h2 class="ResultH2">Как вы получите отчётность (результат)</h2>
-            <p class="ResultP">(результат)</p>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="content_U">
-          <div class="info">
-            <p class="ResultP1">
-              Считайте <span class="ResultSpan"> прибыль , </span> а не клики и
-              переходы
-            </p>
-            <p class="ResultP2">
-              Отслеживайте <br />
-              <span class="ResultSpan"> лиды,</span> а не трату бюджетов
-            </p>
-          </div>
-          <div class="section_result">
-            <div class="dashboard">
-              <div class="tab">
-                <span class="loga_span">
-                  <img src="./assets/images/icon1.png" alt="png" />
-                </span>
-                <button
-                  class="tablinks tabbbb"
-                  onclick="openCity(event, 'London')"
-                  id="defaultOpen"
-                >
-                  <img src="./assets/images/icon2.png" alt="" />
-                </button>
-                <button
-                  class="tablinks tasd"
-                  onclick="openCity(event, 'Paris')"
-                >
-                  <img src="./assets/images/icon3.png" alt="svg" />
-                </button>
-                <button class="tablinks" onclick="openCity(event, 'Tokyo')">
-                  <img src="./assets/images/icon4.png" alt="svg" />
                 </button>
               </div>
             </div>
-            <div class="dash_2">
-              <div id="London" class="tabcontent">
-                <h3 class="titl">Отчет директора по маркетингу</h3>
-                <div class="data_div111">
-                  <div class="data_div">
-                    <div class="okt">
-                      <h6>Период</h6>
-                      <h5>01 окт - 05 дек 2021</h5>
-                    </div>
-                    <i class="far fa-calendar"></i>
+          </div>
+          <div class="content-right"></div>
+        </div>
+      </div>
+    </div>
+    <div class="allKeys">
+      <button>
+        <span class="button-text"> Посмотреть все кейсы </span>
+        <span><svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.333 0.295472C13.7241 -0.0986646 14.3575 -0.0983164 14.7484 0.295472L19.6745 5.259C19.8737 5.44402 19.9987 5.70894 19.9987 6.00068C19.9987 6.29926 19.8678 6.56974 19.6603 6.75523L14.7484 11.7045C14.3572 12.0987 13.7238 12.0983 13.333 11.7045C12.9422 11.3107 12.9418 10.6725 13.333 10.2784L16.5776 7.00911L1 7.00911C0.447717 7.00911 0 6.55297 0 6.00068C0 5.4484 0.447715 4.99225 1 4.99225L16.579 4.99225L13.333 1.7216C13.1505 1.53777 13.0534 1.30066 13.0413 1.06007C13.0272 0.785356 13.1243 0.50577 13.333 0.295472Z"
+              fill="#1B558D" />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </section>
+
+  <!-- ================================= feedback start -->
+  <section class="feedback">
+    <div class="feedback-content">
+      <div class="content-left">
+        <h2>Нужны заявки?</h2>
+        <p>
+          Запоните форму, свяжемся с вами для более детального изучения
+          проекта и подготовки коммерческого предложения
+        </p>
+        <form action="">
+          <div class="form-left">
+            <input type="text" placeholder="Ваше имя" name="name" id="name" />
+            <input type="number" placeholder="Ваш телефон" name="phone" id="phone" />
+          </div>
+          <div class="form-right">
+            <p>Удобное время для звонка (по МСК)</p>
+            <div class="form-radios">
+              <input type="radio" id="10-13" name="time" value="10-13" />
+              <button type="button" for="html">10:00 - 13:00</button>
+
+              <input type="radio" id="13-16" name="time" value="13-16" />
+              <button type="button" for="13-16">13:00 - 16:00</button>
+
+              <input type="radio" id="16-19" name="time" value="16-19" />
+              <button type="button" for="16-19">16:00 - 19:00</button>
+            </div>
+            <span>Работаем по будням с 9:00 до 18:00. Заявки, отправленные в
+              выходные, обрабатываем в первый рабочий день до 11:00</span>
+          </div>
+          <div class="form-footer">
+            <button type="submit">
+              <span class="button-text">Отправить</span>
+              <span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4.99609 1.00195C4.99609 0.449707 5.44385 0.00195312 5.99609 0.00195312H12.9961C13.5483 0.00195312 13.9961 0.449707 13.9961 1.00195V8.00195C13.9961 8.5542 13.5483 9.00195 12.9961 9.00195C12.4438 9.00195 11.9961 8.5542 11.9961 8.00195V3.41602L1.70715 13.7051C1.31665 14.0956 0.683472 14.0956 0.292969 13.7051C-0.0976562 13.3145 -0.0976562 12.6814 0.292969 12.2908L10.5818 2.00195H5.99609C5.44385 2.00195 4.99609 1.5542 4.99609 1.00195Z"
+                    fill="white" />
+                </svg>
+              </span>
+            </button>
+            <p>
+              Нажимая кнопку, вы соглашаетесь с
+              <span>политикой</span> обработки персональных данных
+            </p>
+          </div>
+        </form>
+      </div>
+      <div class="content-right">
+        <div class="elephant-img">
+          <img src="./assets/images/elephant_body_dark.png" alt="elephant-body" class="elephant-body elephant-img-bo" />
+          <img src="./assets/images/elephant_ears_dark.png" alt="elephant-ears" class="elephant-ears elephant-img-bo" />
+          <img src="./assets/images/elephant_face_dark.png" alt="elephant-face" class="elephant-face elephant-img-bo" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================= section result start -->
+  <section class="section_result_1">
+    <div class="container">
+      <div class="row">
+        <div class="result-top">
+          <h2 class="ResultH2">Как вы получите отчётность</h2>
+          <p class="ResultP">(результат)</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="content_U">
+        <div class="info">
+          <p class="ResultP1">
+            Считайте <span class="ResultSpan"> прибыль , </span> а не клики и
+            переходы
+          </p>
+          <p class="ResultP2">
+            Отслеживайте <br />
+            <span class="ResultSpan"> лиды,</span> а не трату бюджетов
+          </p>
+        </div>
+        <div class="section_result">
+          <div class="dashboard">
+            <div class="tab">
+              <span class="loga_span">
+                <img src="./assets/images/icon1.png" alt="png" />
+              </span>
+              <button class="tablinks tabbbb" onclick="openCity(event, 'London')" id="defaultOpen">
+                <img src="./assets/images/icon2.png" alt="" />
+              </button>
+              <button class="tablinks tasd" onclick="openCity(event, 'Paris')">
+                <img src="./assets/images/icon3.png" alt="svg" />
+              </button>
+              <button class="tablinks" onclick="openCity(event, 'Tokyo')">
+                <img src="./assets/images/icon4.png" alt="svg" />
+              </button>
+            </div>
+          </div>
+          <div class="dash_2">
+            <div id="London" class="tabcontent">
+              <h3 class="titl">Отчет директора по маркетингу</h3>
+              <div class="data_div111">
+                <div class="data_div">
+                  <div class="okt">
+                    <h6>Период</h6>
+                    <h5>01 окт - 05 дек 2021</h5>
                   </div>
-                  <div class="data_div">
-                    <div class="okt">
-                      <h6>Регион</h6>
-                      <h5>Киров</h5>
-                    </div>
-                    <i class="fas fa-chevron-down"></i>
+                  <i class="far fa-calendar"></i>
+                </div>
+                <div class="data_div">
+                  <div class="okt">
+                    <h6>Регион</h6>
+                    <h5>Киров</h5>
+                  </div>
+                  <i class="fas fa-chevron-down"></i>
+                </div>
+              </div>
+              <div class="rubl_div111">
+                <div class="rubl_div">
+                  <h4>Потрачено бюджетов</h4>
+                  <h3>113 456 ₽ <span>127 345 ₽</span></h3>
+                  <div class="rubl_down">
+                    <h5>-13 889 ₽</h5>
+                    <i class="fas fa-long-arrow-alt-down"></i>
                   </div>
                 </div>
-                <div class="rubl_div111">
-                  <div class="rubl_div">
-                    <h4>Потрачено бюджетов</h4>
-                    <h3>113 456 ₽ <span>127 345 ₽</span></h3>
-                    <div class="rubl_down">
-                      <h5>-13 889 ₽</h5>
-                      <i class="fas fa-long-arrow-alt-down"></i>
-                    </div>
+                <div class="rubl_div">
+                  <h4>Количество лидов</h4>
+                  <h3>1 608 <span>1 237 ₽</span></h3>
+                  <div class="rubl_down d-flex justify-content-between">
+                    <h5>+30%</h5>
+                    <i class="fas fa-long-arrow-alt-down"></i>
                   </div>
-                  <div class="rubl_div">
-                    <h4>Количество лидов</h4>
-                    <h3>1 608 <span>1 237 ₽</span></h3>
-                    <div class="rubl_down d-flex justify-content-between">
-                      <h5>+30%</h5>
-                      <i class="fas fa-long-arrow-alt-down"></i>
-                    </div>
+                </div>
+                <div class="rubl_div">
+                  <h4>Стоимость лида</h4>
+                  <h3>1 455 ₽ <span>987 ₽</span></h3>
+                  <div class="rubl_down d-flex justify-content-between">
+                    <h5>+23%</h5>
+                    <i class="fas fa-long-arrow-alt-down"></i>
                   </div>
-                  <div class="rubl_div">
-                    <h4>Стоимость лида</h4>
-                    <h3>1 455 ₽ <span>987 ₽</span></h3>
-                    <div class="rubl_down d-flex justify-content-between">
-                      <h5>+23%</h5>
-                      <i class="fas fa-long-arrow-alt-down"></i>
+                </div>
+              </div>
+              <div class="Diograms">
+                <div class="diagramma111">
+                  <h3>Лиды по источникам</h3>
+                  <div class="diag_img">
+                    <img src="./assets/images/diag.png" />
+                    <div class="diag_item111">
+                      <div class="diag_item">
+                        <h4><span></span>Яндекс</h4>
+                        <h5>121 шт</h5>
+                      </div>
+                      <div class="diag_item">
+                        <h4><span></span>Google</h4>
+                        <h5>10 шт</h5>
+                      </div>
+                      <div class="diag_item">
+                        <h4><span></span>Instagram</h4>
+                        <h5>2 штт</h5>
+                      </div>
+                      <div class="diag_item">
+                        <h4><span></span>Facebook</h4>
+                        <h5>2 шт</h5>
+                      </div>
+                      <div class="diag_item">
+                        <h4><span></span>VK</h4>
+                        <h5>2 шт</h5>
+                      </div>
+                      <div class="diag_item">
+                        <h4><span></span>SEO</h4>
+                        <h5>200 шт</h5>
+                      </div>
+                      <div class="diag_item">
+                        <h4><span></span>Avito</h4>
+                        <h5>2 шт</h5>
+                      </div>
+                      <div class="diag_item">
+                        <h4><span></span>Рассылка</h4>
+                        <h5>2 шт</h5>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="Diograms">
-                  <div class="diagramma111">
-                    <h3>Лиды по источникам</h3>
-                    <div class="diag_img">
-                      <img src="./assets/images/diag.png" />
-                      <div class="diag_item111">
-                        <div class="diag_item">
-                          <h4><span></span>Яндекс</h4>
-                          <h5>121 шт</h5>
-                        </div>
-                        <div class="diag_item">
-                          <h4><span></span>Google</h4>
-                          <h5>10 шт</h5>
-                        </div>
-                        <div class="diag_item">
-                          <h4><span></span>Instagram</h4>
-                          <h5>2 штт</h5>
-                        </div>
-                        <div class="diag_item">
-                          <h4><span></span>Facebook</h4>
-                          <h5>2 шт</h5>
-                        </div>
-                        <div class="diag_item">
-                          <h4><span></span>VK</h4>
-                          <h5>2 шт</h5>
-                        </div>
-                        <div class="diag_item">
-                          <h4><span></span>SEO</h4>
-                          <h5>200 шт</h5>
-                        </div>
-                        <div class="diag_item">
-                          <h4><span></span>Avito</h4>
-                          <h5>2 шт</h5>
-                        </div>
-                        <div class="diag_item">
-                          <h4><span></span>Рассылка</h4>
-                          <h5>2 шт</h5>
-                        </div>
-                      </div>
+                <div class="diogramLine">
+                  <h2 class="LineH2">Цена лида по источникам</h2>
+                  <div class="LineLine">
+                    <div class="verticalline">
+                      <span class="Spanline">3 000</span>
+                      <span class="Spanline">2 500</span>
+                      <span class="Spanline">2 000</span>
+                      <span class="Spanline">1 500</span>
+                      <span class="Spanline">1 000</span>
+                      <span class="Spanline">500</span>
                     </div>
-                  </div>
-                  <div class="diogramLine">
-                    <h2 class="LineH2">Цена лида по источникам</h2>
-                    <div class="LineLine">
-                      <div class="verticalline">
-                        <span class="Spanline">3 000</span>
-                        <span class="Spanline">2 500</span>
-                        <span class="Spanline">2 000</span>
-                        <span class="Spanline">1 500</span>
-                        <span class="Spanline">1 000</span>
-                        <span class="Spanline">500</span>
-                      </div>
-                      <div class="gorizontline">
-                        <img src="./assets/images/graph.png" alt="jpg" />
-                        <ul>
-                          <li><a href="#!">Январь</a></li>
-                          <li><a href="#!">Февраль</a></li>
-                          <li><a href="#!">Март</a></li>
-                          <li><a href="#!">Апрель</a></li>
-                          <li><a href="#!">Май</a></li>
-                        </ul>
-                      </div>
-                      <div class="verticalLeft">
-                        <p>
-                          <span class="lineLeftColor1 colors-right"></span>
-                          Яндекс
-                        </p>
-                        <p>
-                          <span class="lineLeftColor2 colors-right"></span>
-                          Google
-                        </p>
-                        <p>
-                          <span class="lineLeftColor3 colors-right"></span>
-                          Instagram
-                        </p>
-                        <p>
-                          <span class="lineLeftColor4 colors-right"></span>
-                          Facebook
-                        </p>
-                        <p>
-                          <span class="lineLeftColor5 colors-right"></span> VK
-                        </p>
-                        <p>
-                          <span class="lineLeftColor6 colors-right"></span> SEO
-                        </p>
-                        <p>
-                          <span class="lineLeftColor7 colors-right"></span>
-                          Avito
-                        </p>
-                        <p>
-                          <span class="lineLeftColor8 colors-right"></span>
-                          Рассылка
-                        </p>
-                      </div>
+                    <div class="gorizontline">
+                      <img src="./assets/images/graph.png" alt="jpg" />
+                      <ul>
+                        <li><a href="#!">Январь</a></li>
+                        <li><a href="#!">Февраль</a></li>
+                        <li><a href="#!">Март</a></li>
+                        <li><a href="#!">Апрель</a></li>
+                        <li><a href="#!">Май</a></li>
+                      </ul>
+                    </div>
+                    <div class="verticalLeft">
+                      <p>
+                        <span class="lineLeftColor1 colors-right"></span>
+                        Яндекс
+                      </p>
+                      <p>
+                        <span class="lineLeftColor2 colors-right"></span>
+                        Google
+                      </p>
+                      <p>
+                        <span class="lineLeftColor3 colors-right"></span>
+                        Instagram
+                      </p>
+                      <p>
+                        <span class="lineLeftColor4 colors-right"></span>
+                        Facebook
+                      </p>
+                      <p>
+                        <span class="lineLeftColor5 colors-right"></span> VK
+                      </p>
+                      <p>
+                        <span class="lineLeftColor6 colors-right"></span> SEO
+                      </p>
+                      <p>
+                        <span class="lineLeftColor7 colors-right"></span>
+                        Avito
+                      </p>
+                      <p>
+                        <span class="lineLeftColor8 colors-right"></span>
+                        Рассылка
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -790,26 +684,20 @@
           </div>
         </div>
       </div>
-      <div class="bottom_bottom">
-        <button>
-          <span class="button-text"> Посмотреть пример отчета </span>
-          <span>
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M6 9C6.55228 9 7 9.44771 7 10V15C7 15.5523 7.44772 16 8 16C8.55229 16 9 15.5523 9 15V10C9 9.44772 9.44771 9 10 9H15C15.5523 9 16 8.55229 16 8C16 7.44772 15.5523 7 15 7H10C9.44772 7 9 6.55228 9 6V1C9 0.447715 8.55229 0 8 0C7.44772 0 7 0.447715 7 1V6C7 6.55228 6.55228 7 6 7H1C0.447715 7 0 7.44772 0 8C0 8.55229 0.447715 9 1 9H6Z"
-                fill="#1B558D"
-              />
-            </svg>
-          </span>
-        </button>
-      </div>
-    </section>
+    </div>
+    <div class="bottom_bottom">
+      <button>
+        <span class="button-text"> Посмотреть пример отчета </span>
+        <span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M6 9C6.55228 9 7 9.44771 7 10V15C7 15.5523 7.44772 16 8 16C8.55229 16 9 15.5523 9 15V10C9 9.44772 9.44771 9 10 9H15C15.5523 9 16 8.55229 16 8C16 7.44772 15.5523 7 15 7H10C9.44772 7 9 6.55228 9 6V1C9 0.447715 8.55229 0 8 0C7.44772 0 7 0.447715 7 1V6C7 6.55228 6.55228 7 6 7H1C0.447715 7 0 7.44772 0 8C0 8.55229 0.447715 9 1 9H6Z"
+              fill="#1B558D" />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </section>
 
     <!-- ================================= section digital start -->
     <section class="digital">
@@ -898,6 +786,23 @@
               <span>Может быть</span>
               <span>Обязательно</span>
             </div>
+  <!-- ================================= section digital start -->
+  <section class="digital">
+    <div class="digital-content">
+      <div class="digital_title">
+        <h2 class="dital_top_title">Почему</h2>
+        <h2 class="dital_top_center">digital-агентство</h2>
+        <h2 class="dital_top_bottom">Family ...</h2>
+      </div>
+      <div class="digital_body">
+        <p class="body_text">
+          В ходе опроса, проведенного среди клиентов в 2021 году получен
+          индекс NPS
+        </p>
+        <div class="digital_progress">
+          <div class="progress_box">
+            <div class="progress"></div>
+            <div class="progress_text">50 <span>%</span></div>
           </div>
           <div class="bottom-right">
             <h3>NPS равен:</h3>
@@ -943,11 +848,13 @@
           <div class="icon facebook"></div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./assets/script/script.js"></script>
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./assets/script/script.js"></script>
+</body>
+
 </html>
