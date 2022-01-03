@@ -790,6 +790,11 @@ header .elephant-header img {
   overflow: hidden;
 }
 
+.feedback .content-left {
+  position: relative;
+  z-index: 18;
+}
+
 .feedback .feedback-content {
   max-width: 1559px;
   margin: auto;
@@ -1472,11 +1477,12 @@ input[type="number"] {
 }
 
 .section_result_1 .bottom_bottom button span {
-  padding: 10px 14px;
+  padding: 8px 14px;
   background-color: #fff;
   border-radius: 12px;
   line-height: 0;
   height: 0;
+  margin-top: 5px;
 }
 
 .section_result_1 .bottom_bottom button .button-text {
@@ -1487,15 +1493,267 @@ input[type="number"] {
   font-weight: 600;
   font-size: 20px;
   line-height: 150%;
+  margin-top: 0;
 }
 
 /* ==================================================== section digital start */
 
 .digital {
-  padding-top: 135px;
+  padding-top: 335px;
+  padding-bottom: 130px;
+  background-color: #fff;
+  position: relative;
+  z-index: 15;
 }
 
-.digital-content {
+.digital .digital-content {
+  max-width: 1559 px;
+  margin: auto;
+}
+
+.digital .digital-content .digital_title {
   max-width: 1250px;
   margin: auto;
+}
+
+.digital .digital-content .dital-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 100px;
+  line-height: 120%;
+  color: #2d3845;
+  margin-left: 390px;
+}
+
+.digital .digital-content .dital-title.center {
+  margin-left: 255px;
+}
+
+.digital .digital-content .dital-title.bottom {
+  background: linear-gradient(270deg, #1b558d 0%, #379bad 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.digital .digital-content .digital-body {
+  max-width: 1250px;
+  margin: auto;
+}
+
+.digital .digital-content .digital-body .body-text {
+  width: 50%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 160%;
+  color: #2d3845;
+  margin-top: 100px;
+  margin-bottom: 174px;
+}
+
+.digital .digital-content .digital-body .body-text span {
+  color: #379bad;
+}
+
+.digital .digital-content .digital-progress {
+  max-width: 1530px;
+  margin: auto;
+}
+
+.digital .digital-content .digital-progress .progress-box {
+  width: 100%;
+  height: 100px;
+  background: #f4f8fa;
+  border-radius: 12px;
+  position: relative;
+}
+
+.digital .digital-content .digital-progress .progress-box .progress-text {
+  display: flex;
+  position: absolute;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 300px;
+  line-height: 80%;
+  background: linear-gradient(270deg, #1b558d 0%, #379bad 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  bottom: 30px;
+  left: calc(50% + 145px);
+}
+
+.digital .digital-content .digital-progress .progress-box .progress-text span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 120%;
+  color: #1b558d;
+}
+
+.digital .digital-content .digital-progress .progress-box .progress {
+  position: absolute;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  background: linear-gradient(-90deg, #1b558d 0%, #379bad 100%);
+}
+
+.digital .digital-content .digital-bottom {
+  max-width: 1250px;
+  margin: auto;
+  margin-top: 48px;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.digital .digital-content .digital-bottom .bottom-box {
+  width: 250px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 150%;
+  color: #2d3845;
+}
+
+.digital .digital-content .digital-bottom .bottom-box:nth-child(1) {
+  margin-right: 40%;
+}
+
+.digital .digital-content .digital-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.digital .digital-content .digital-footer button {
+  padding: 30px 60px;
+  background: #f4f8fa;
+  border-radius: 12px;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.digital .digital-content .digital-footer button .button-icon {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 14px;
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.digital .digital-content .digital-footer button .button-text {
+  background: linear-gradient(270deg, #1b558d 0%, #379bad 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  margin-right: 20px;
+}
+
+.nps-modal {
+  top: 0;
+  position: fixed;
+  z-index: 30;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.nps-modal .modal-box {
+  width: 1530px;
+  margin: auto;
+  padding: 60px 110px 100px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  background: #f4f8fa;
+  border-radius: 12px;
+  position: fixed;
+}
+
+.nps-modal .modal-box .modal-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.nps-modal .modal-box .modal-top .modal-close {
+  background: #ffffff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.nps-modal .modal-box .modal-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nps-modal .modal-box .modal-bottom h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 150%;
+  color: #2d3845;
+  margin-bottom: 10px;
+}
+.nps-modal .modal-box .modal-bottom p {
+  width: 350px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: #6f7b7e;
+}
+.nps-modal .modal-box .modal-bottom .bottom-center .nps-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.nps-modal .modal-box .modal-bottom .bottom-center .nps-text {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2.7px;
+  padding-right: 2.7px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 135%;
+  color: #8b95a0;
+  margin-top: 10px;
+}
+.nps-modal .modal-box .modal-bottom .bottom-center .review {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 135%;
+  color: #ffffff;
+  background: #379bad;
+  border-radius: 12px;
+  margin-left: 2.75px;
+  margin-right: 2.75px;
 }

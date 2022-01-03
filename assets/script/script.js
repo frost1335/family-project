@@ -376,9 +376,67 @@ window.addEventListener("load", function (e) {
         start: "60% 30%",
         scrub: 1,
         end: "+=100",
-        markers: true,
       },
     });
   };
   sectionResultAnimation();
+
+  const digitalAnimation = () => {
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".digital_title",
+        start: "0% 90%",
+        scrub: 2,
+        end: () =>
+          "+=" + document.querySelector(".digital_title").offsetHeight * 1.3,
+        markers: true,
+      },
+    });
+
+    tl.from(".dital-title", {
+      opacity: 0,
+      duration: 2,
+    }).to(
+      ".dig-cen-title",
+      {
+        marginLeft: 390,
+        duration: 2,
+      },
+      "-=0.9"
+    );
+
+    let tl2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".digital-body",
+        start: "0% 53%",
+        scrub: 1,
+        pin: ".digital",
+        end: () => "+=" + 600,
+      },
+    });
+
+    tl2
+      .from(".progress-box", {
+        opacity: 0,
+      })
+      .from(
+        ".progress",
+        {
+          width: 0,
+        },
+        "-=0.5"
+      );
+
+    gsap.from([".bottom-box"], {
+      y: 30,
+      opacity: 0,
+      scrollTrigger: {
+        trigger: ".digital-progress",
+        start: "0% 10%",
+        scrub: 1,
+        markers: true,
+      },
+    });
+  };
+  digitalAnimation();
 });

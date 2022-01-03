@@ -793,24 +793,100 @@
     <section class="digital">
       <div class="digital-content">
         <div class="digital_title">
-          <h2 class="dital_top_title">Почему</h2>
-          <h2 class="dital_top_center">digital-агентство</h2>
-          <h2 class="dital_top_bottom">Family ...</h2>
+          <h2 class="dital-title top">Почему</h2>
+          <h2 class="dital-title center dig-cen-title">digital-агентство</h2>
+          <h2 class="dital-title bottom">Family ...</h2>
         </div>
-        <div class="digital_body">
-          <p class="body_text">
+        <div class="digital-body">
+          <p class="body-text">
             В ходе опроса, проведенного среди клиентов в 2021 году получен
-            индекс NPS
+            индекс <span>NPS</span>
           </p>
-          <div class="digital_progress">
-            <div class="progress_box">
-              <div class="progress"></div>
-              <div class="progress_text">50 <span>%</span></div>
-            </div>
+        </div>
+        <div class="digital-progress">
+          <div class="progress-box">
+            <div class="progress"></div>
+            <div class="progress-text">50 <span>%</span></div>
           </div>
+        </div>
+        <div class="digital-bottom">
+          <div class="bottom-box">Среднее значение NPS в мире 16%</div>
+          <div class="bottom-box">Столько же у Sony и Amazon</div>
+        </div>
+        <div class="digital-footer">
+          <button>
+            <span class="button-text"> Как считается NPS ? </span>
+            <span class="button-icon">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 9C6.55228 9 7 9.44771 7 10V15C7 15.5523 7.44772 16 8 16C8.55229 16 9 15.5523 9 15V10C9 9.44772 9.44771 9 10 9H15C15.5523 9 16 8.55229 16 8C16 7.44772 15.5523 7 15 7H10C9.44772 7 9 6.55228 9 6V1C9 0.447715 8.55229 0 8 0C7.44772 0 7 0.447715 7 1V6C7 6.55228 6.55228 7 6 7H1C0.447715 7 0 7.44772 0 8C0 8.55229 0.447715 9 1 9H6Z"
+                  fill="#1B558D"
+                />
+              </svg>
+            </span>
+          </button>
         </div>
       </div>
     </section>
+
+    <div class="nps-modal">
+      <div class="modal-box">
+        <div class="modal-top">
+          <button class="modal-close">
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.33535 10.0461C-0.111553 10.493 -0.111553 11.2177 0.33535 11.6646C0.782252 12.1115 1.50694 12.1115 1.95384 11.6646L5.99993 7.61852L10.0461 11.6647C10.493 12.1116 11.2177 12.1116 11.6646 11.6647C12.1115 11.2178 12.1115 10.4931 11.6646 10.0462L7.61842 6.00003L11.6648 1.95367C12.1117 1.50676 12.1117 0.782079 11.6648 0.335177C11.2179 -0.111726 10.4932 -0.111726 10.0463 0.335177L5.99993 4.38154L1.95367 0.335269C1.50676 -0.111633 0.782079 -0.111633 0.335177 0.335269C-0.111726 0.782171 -0.111726 1.50686 0.335177 1.95376L4.38144 6.00003L0.33535 10.0461Z"
+                fill="#2D3845"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="modal-bottom">
+          <div class="bottom-left">
+            <h3>Мы спросили:</h3>
+            <p>насколько вероятно, что вы нас порекомендуете?</p>
+          </div>
+          <div class="bottom-center">
+            <div class="nps-buttons">
+              <button class="review">1</button>
+              <button class="review">2</button>
+              <button class="review">3</button>
+              <button class="review">4</button>
+              <button class="review">5</button>
+              <button class="review">6</button>
+              <button class="review">7</button>
+              <button class="review">8</button>
+              <button class="review">9</button>
+              <button class="review">10</button>
+            </div>
+            <div class="nps-text">
+              <span>Никогда</span>
+              <span>Может быть</span>
+              <span>Обязательно</span>
+            </div>
+          </div>
+          <div class="bottom-right">
+            <h3>NPS равен:</h3>
+            <p>
+              процент промоутеров (9 и 10) минус процент дистракторов (от 1 до
+              8)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
