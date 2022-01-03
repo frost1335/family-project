@@ -30,7 +30,7 @@ header nav {
   padding-top: 45px;
   margin: auto;
   position: relative;
-  z-index: 5;
+  z-index: 152;
 }
 
 header nav .header-left {
@@ -1770,6 +1770,7 @@ input[type="number"] {
   border-radius: 12px;
   margin-left: 2.75px;
   margin-right: 2.75px;
+  cursor: pointer;
 }
 
 /* ==================================================== section strategy started */
@@ -1814,22 +1815,87 @@ input[type="number"] {
 }
 
 .strategy .strategy-card .card-left {
+  width: 230px;
+  height: 230px;
   position: absolute;
   left: 0;
   top: 0;
+  border-radius: 12px;
 }
 
 .strategy .strategy-card .card-right {
+  width: 230px;
+  height: 230px;
   position: absolute;
-  right: 0;
+  z-index: 1;
+  left: 87.9%;
   top: 0;
+  border-radius: 12px;
 }
 
 .strategy .strategy-card .card-bottom {
+  width: 230px;
+  height: 230px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   bottom: 0;
+  border-radius: 12px;
+}
+
+.strategy .strategy-card img {
+  width: 100%;
+  height: 100%;
+}
+
+.strategy .strategy-card .card-center {
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  top: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #f4f8fa;
+  border-radius: 12px;
+  z-index: 2;
+  opacity: 0;
+}
+
+.strategy .strategy-card .card-center .center-card-img {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/site.svg);
+  border-radius: 12px;
+  opacity: 0;
+}
+
+.strategy .strategy-dark {
+  width: 100%;
+  height: 0;
+  position: fixed;
+  z-index: 40;
+  bottom: -30%;
+  overflow: hidden;
+}
+
+.strategy .strategy-dark .dark-bg {
+  background: radial-gradient(28.23% 50% at 50% 50%, #0c2a47 0%, #0f0e10 100%);
+  width: 100%;
+  height: 105vh;
+  position: absolute;
+  bottom: 0;
+}
+
+.strategy .strategy-dark .dark-card {
+  width: 490px;
+  height: 340px;
+  z-index: 40;
+  position: absolute;
+  bottom: 310px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url(../images/site2.svg);
+  border-radius: 12px;
 }
 
 @media (max-width: 1599px) {

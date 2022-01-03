@@ -389,7 +389,6 @@ window.addEventListener("load", function (e) {
         scrub: 2,
         end: () =>
           "+=" + document.querySelector(".digital_title").offsetHeight * 1.3,
-        markers: true,
       },
     });
 
@@ -434,9 +433,28 @@ window.addEventListener("load", function (e) {
         trigger: ".digital-progress",
         start: "0% 10%",
         scrub: 1,
-        markers: true,
       },
     });
+
+    const arrC = [
+      "#379BAD",
+      "#318DA7",
+      "#2E86A3",
+      "#2C7FA0",
+      "#29789D",
+      "#267199",
+      "#236A96",
+      "#206393",
+      "#1D5B90",
+      "#1B558D",
+    ];
+
+    document
+      .querySelector(".nps-modal")
+      .querySelectorAll(".review")
+      .forEach((el, idx) => {
+        el.style.background = arrC[idx];
+      });
 
     $(".footer-button").on("click", function (e) {
       gsap.to(".nps-modal", {
@@ -468,7 +486,6 @@ window.addEventListener("load", function (e) {
         trigger: ".strategy-title",
         scrub: 2,
         start: "0% 90%",
-        markers: true,
         end: "+=400",
       },
     });
@@ -483,18 +500,65 @@ window.addEventListener("load", function (e) {
     );
 
     gsap.to([".card-left", ".card-right", ".card-bottom"], {
-      top: 0,
+      top: "1%",
       left: "50%",
-      x: "-50%",
+      transform: "translateX(-50%)",
+      duration: 1,
       scrollTrigger: {
         trigger: ".strategy-card",
         start: "0% 100%",
         scrub: 1,
-        markers: true,
+        ease: "ease-out",
         end: () =>
-          "+=" + document.querySelector(".strategy-card").offsetHeight / 2,
+          "+=" + document.querySelector(".strategy-card").offsetHeight / 1.35,
       },
     });
+
+    const tl2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".title-center",
+        start: "50px 0%",
+        scrub: 1,
+        pin: ".strategy",
+        markers: true,
+        end: () => "+=" + document.querySelector(".strategy").offsetHeight * 3,
+      },
+    });
+
+    tl2
+      .to(".card-right", {
+        opacity: 1,
+        duration: 1,
+      })
+      .to(".card-center", {
+        opacity: 1,
+        duration: 1,
+      })
+      .to(".card-center", {
+        width: 490,
+        height: 340,
+      })
+      .to(
+        [".card-left", ".card-right", ".card-bottom"],
+        {
+          display: "none",
+        },
+        "-=0.5"
+      )
+      .to(".center-card-img", {
+        opacity: 1,
+        duration: 1,
+      })
+      .to(".strategy-dark", {
+        height: "110vh",
+        duration: 2,
+      });
   };
+
+  window.addEventListener("scroll", () => {
+    const elem = document.querySelector(".center-card-img");
+    const position = elem.getBoundingClientRect();
+    console.log(position.top);
+  });
   strategyAnimation();
 });
