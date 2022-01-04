@@ -103,7 +103,7 @@ window.addEventListener("load", function (e) {
         trigger: ".mainTitle",
         start: "0% 100%",
         toggleActions: "restart pause reverse pause",
-        end: () => mainContent.offsetHeight,
+        end: () => "+=" + mainContent.offsetHeight,
         scrub: 1,
       },
     });
@@ -139,7 +139,7 @@ window.addEventListener("load", function (e) {
         scrollTrigger: {
           trigger: ".main-underline",
           start: "100% 100%",
-          end: "+=2300",
+          end: "+=4500",
           scrub: 2,
           pin: ".main-underline",
           toggleActions: "restart pause reverse pause",
@@ -230,7 +230,7 @@ window.addEventListener("load", function (e) {
         start: "top 80%",
         scrub: true,
         end: () =>
-          "+=" + document.querySelector(".feedback-1").offsetHeight * 2.6,
+          "+=" + document.querySelector(".feedback-1").offsetHeight * 2.5,
       },
     });
     gsap.to(".elephant-img-bo-1", {
@@ -240,7 +240,7 @@ window.addEventListener("load", function (e) {
         start: "top 35%",
         scrub: true,
         end: () =>
-          "+=" + document.querySelector(".feedback-1").offsetHeight * 1.5,
+          "+=" + document.querySelector(".feedback-1").offsetHeight * 3,
       },
     });
     const elephImg = gsap.timeline({
@@ -256,14 +256,16 @@ window.addEventListener("load", function (e) {
       scale: 1,
       right: -40,
       top: 30,
+      duration: 2,
     });
 
     elephImg.to(
       ".elephant-img-1",
       {
         opacity: 1,
+        duration: 2,
       },
-      "-=0.5"
+      "-=1"
     );
   };
   feedbackAnimation1();
@@ -273,7 +275,7 @@ window.addEventListener("load", function (e) {
       scrollTrigger: {
         trigger: ".section_result_1",
         start: "top -50%",
-        end: "+=3000",
+        end: "+=6000",
         scrub: 1,
         pin: true,
       },
@@ -524,8 +526,7 @@ window.addEventListener("load", function (e) {
         start: "50px 0%",
         scrub: 1,
         pin: ".strategy",
-        end: () =>
-          "+=" + document.querySelector(".strategy").offsetHeight * 3.5,
+        end: () => "+=" + document.querySelector(".strategy").offsetHeight * 7,
       },
     });
 
@@ -596,7 +597,7 @@ window.addEventListener("load", function (e) {
         start: "top 80%",
         scrub: true,
         end: () =>
-          "+=" + document.querySelector(".feedback-2").offsetHeight * 2.6,
+          "+=" + document.querySelector(".feedback-2").offsetHeight * 2.5,
       },
     });
     gsap.to(".elephant-img-bo-2", {
@@ -606,7 +607,7 @@ window.addEventListener("load", function (e) {
         start: "top 35%",
         scrub: true,
         end: () =>
-          "+=" + document.querySelector(".feedback-2").offsetHeight * 1.5,
+          "+=" + document.querySelector(".feedback-2").offsetHeight * 2.5,
       },
     });
     const elephImg = gsap.timeline({
@@ -622,14 +623,16 @@ window.addEventListener("load", function (e) {
       scale: 1,
       right: -40,
       top: 30,
+      duration: 3,
     });
 
     elephImg.to(
       ".elephant-img-2",
       {
         opacity: 1,
+        duration: 2,
       },
-      "-=0.5"
+      "-=1"
     );
   };
   feedbackAnimation2();
