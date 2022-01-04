@@ -221,52 +221,52 @@ window.addEventListener("load", function (e) {
   };
   resultsAnimation();
 
-  const feedbackAnimation = () => {
-    gsap.to(".feedback", {
+  const feedbackAnimation1 = () => {
+    gsap.to(".feedback-1", {
       paddingTop: 260,
       paddingBottom: 60,
       scrollTrigger: {
-        trigger: ".feedback",
+        trigger: ".feedback-1",
         start: "top 80%",
         scrub: true,
         end: () =>
-          "+=" + document.querySelector(".feedback").offsetHeight * 2.6,
+          "+=" + document.querySelector(".feedback-1").offsetHeight * 2.6,
       },
     });
-    gsap.to(".elephant-img-bo", {
+    gsap.to(".elephant-img-bo-1", {
       y: "+=150",
       scrollTrigger: {
-        trigger: ".feedback",
+        trigger: ".feedback-1",
         start: "top 35%",
         scrub: true,
         end: () =>
-          "+=" + document.querySelector(".feedback").offsetHeight * 1.5,
+          "+=" + document.querySelector(".feedback-1").offsetHeight * 1.5,
       },
     });
     const elephImg = gsap.timeline({
       scrollTrigger: {
-        trigger: ".form-footer",
+        trigger: ".form-footer-1",
         start: "30px 100%",
         scrub: true,
         end: "+=300",
       },
     });
 
-    elephImg.to(".elephant-img-bo", {
+    elephImg.to(".elephant-img-bo-1", {
       scale: 1,
       right: -40,
       top: 30,
     });
 
     elephImg.to(
-      ".elephant-img",
+      ".elephant-img-1",
       {
         opacity: 1,
       },
       "-=0.5"
     );
   };
-  feedbackAnimation();
+  feedbackAnimation1();
 
   const sectionResultAnimation = () => {
     const tl_3 = gsap.timeline({
@@ -465,7 +465,8 @@ window.addEventListener("load", function (e) {
       document.addEventListener("click", function (e) {
         if (
           e.target.className === "nps-modal" ||
-          e.target.className === "modal-close"
+          e.target.className === "modal-close" ||
+          e.target.className.animVal === "modal-x"
         ) {
           gsap.to(".nps-modal", {
             opacity: 0,
@@ -499,19 +500,22 @@ window.addEventListener("load", function (e) {
       "-=0.4"
     );
 
-    gsap.to([".card-left", ".card-right", ".card-bottom"], {
-      top: "1%",
-      left: "50%",
-      transform: "translateX(-50%)",
-      duration: 1,
+    const tlCard = gsap.timeline({
       scrollTrigger: {
         trigger: ".strategy-card",
-        start: "0% 100%",
+        start: "0% 87%",
         scrub: 1,
         ease: "ease-out",
         end: () =>
-          "+=" + document.querySelector(".strategy-card").offsetHeight / 1.35,
+          "+=" + document.querySelector(".strategy-card").offsetHeight * 1.35,
       },
+    });
+
+    tlCard.to([".card-left", ".card-right", ".card-bottom"], {
+      top: "1%",
+      left: "50%",
+      transform: "translateX(-50%)",
+      duration: 2,
     });
 
     const tl2 = gsap.timeline({
@@ -520,8 +524,8 @@ window.addEventListener("load", function (e) {
         start: "50px 0%",
         scrub: 1,
         pin: ".strategy",
-        markers: true,
-        end: () => "+=" + document.querySelector(".strategy").offsetHeight * 3,
+        end: () =>
+          "+=" + document.querySelector(".strategy").offsetHeight * 3.5,
       },
     });
 
@@ -530,18 +534,24 @@ window.addEventListener("load", function (e) {
         opacity: 1,
         duration: 1,
       })
-      .to(".card-center", {
+      .to(".card-right", {
         opacity: 1,
         duration: 1,
       })
       .to(".card-center", {
+        opacity: 1,
+        duration: 1.7,
+      })
+      .to(".card-center", {
         width: 490,
         height: 340,
+        duration: 1,
       })
       .to(
         [".card-left", ".card-right", ".card-bottom"],
         {
           display: "none",
+          duration: 1,
         },
         "-=0.5"
       )
@@ -551,14 +561,134 @@ window.addEventListener("load", function (e) {
       })
       .to(".strategy-dark", {
         height: "110vh",
-        duration: 2,
+        duration: 1,
+      })
+      .from(".icon", {
+        top: "+=100",
+        opacity: 0,
+        duration: 1,
+      })
+      .from(".dark-banners", {
+        y: 120,
+        opacity: 0,
+        duration: 1,
+      })
+      .to(".dark-banners", {
+        opacity: 1,
+      })
+      .to(".dark-lines", {
+        opacity: 1,
+        duration: 1,
+      })
+      .to(".dark-lines", {
+        opacity: 1,
       });
   };
-
-  window.addEventListener("scroll", () => {
-    const elem = document.querySelector(".center-card-img");
-    const position = elem.getBoundingClientRect();
-    console.log(position  .top);
-  });
   strategyAnimation();
+
+  // ============================ feedback animation 2 start
+  const feedbackAnimation2 = () => {
+    gsap.to(".feedback-2", {
+      paddingTop: 260,
+      paddingBottom: 60,
+      scrollTrigger: {
+        trigger: ".feedback-2",
+        start: "top 80%",
+        scrub: true,
+        end: () =>
+          "+=" + document.querySelector(".feedback-2").offsetHeight * 2.6,
+      },
+    });
+    gsap.to(".elephant-img-bo-2", {
+      y: "+=150",
+      scrollTrigger: {
+        trigger: ".feedback-2",
+        start: "top 35%",
+        scrub: true,
+        end: () =>
+          "+=" + document.querySelector(".feedback-2").offsetHeight * 1.5,
+      },
+    });
+    const elephImg = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".form-footer-2",
+        start: "30px 100%",
+        scrub: true,
+        end: "+=300",
+      },
+    });
+
+    elephImg.to(".elephant-img-bo-2", {
+      scale: 1,
+      right: -40,
+      top: 30,
+    });
+
+    elephImg.to(
+      ".elephant-img-2",
+      {
+        opacity: 1,
+      },
+      "-=0.5"
+    );
+  };
+  feedbackAnimation2();
+
+  const keysSection = () => {
+    // gsap.to(".swiper-wrapper", {
+    //   x: -2635,
+    //   duration: 1,
+    //   scrollTrigger: {
+    //     trigger: ".sort",
+    //     start: "50px 0%",
+    //     scrub: 1,
+    //     pin: ".keys",
+    //     markers: true,
+    //     end: () =>
+    //       "+=" + document.querySelector(".swiper-slide").offsetHeight * 3,
+    //   },
+    // });
+    var swiper = new Swiper(".swiper-container", {
+      pagination: { el: ".swiper-pagination", clickable: true },
+      slidesPerView: 1.5,
+      freeMode: { sensitivity: 10 },
+    });
+  };
+  keysSection();
+
+  const footerScript = () => {
+    $(".footerCenterBigLinks2").slideUp();
+
+    $(".footerCenterBottomTitle2").on("click", function (e) {
+      e.preventDefault();
+      $(this)
+        .toggleClass("active")
+        .siblings(".footerCenterBigLinks2")
+        .slideToggle();
+      $(this)
+        .parent()
+        .siblings()
+        .find(".footerCenterBottomTitle2")
+        .removeClass("active")
+        .siblings(".footerCenterBigLinks2")
+        .slideUp();
+      $("footer").css({ height: "118vh" });
+      // $(this).toggleClass('active');
+      // $(this).siblings('p').slideToggle();
+      // $(this).parent().siblings().find('h3').removeClass('.active');
+      // $(this).parent().siblings().find('p').slideUp();
+    });
+
+    gsap.to(".footer", {
+      paddingTop: 180,
+      scrollTrigger: {
+        trigger: ".footer",
+        start: "0% 90%",
+        scrub: true,
+        markers: true,
+        end: () => "+=" + document.querySelector(".footer").offsetHeight,
+      },
+    });
+  };
+  footerScript();
 });
